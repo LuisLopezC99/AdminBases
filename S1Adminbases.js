@@ -1,3 +1,4 @@
+//SIRVE PARA LIMPIAR
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("limpiarBtn").addEventListener("click", function() {
         var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -6,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
 document.getElementById("calculateColorBtn").addEventListener("click", function() {
     let columnNumber = 4; // Número de la columna a calcular
     let checkboxes = document.querySelectorAll(`td:nth-child(${columnNumber}) input[type="checkbox"]`);
