@@ -102,21 +102,7 @@
 
 
               <table class="" style="color: darkred ">
-
-              
-              <?php
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        echo "Proceso: " . $row["process_name"] .  " - " .$row["process_details"] . " - Pregunta: " . $row["question"] . "<br>";
-                    }
-                  }
-
-                // Cerrar la conexión
-                $conn->close();
-                ?>
-
-
-                <tr>
+              <tr>
                   <th>Proceso</th>
                   <th>Detalle</th>
                   <th>Pregunta</th>
@@ -125,179 +111,36 @@
                   <th>N/A</th>
 
                 </tr>
-                <tr>
-                  <td>P01.1</td>
-                  <td>Detalle </td>
-                  <td>¿Se establece y mantiene un Sistema de Administración de Calidad (QMS) que define políticas y métodos para prever, detectar, corregir y prevenir no conformidades?</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P01.2</td>
-                  <td>Detalle </td>
-                  <td></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P01.3</td>
-                  <td>Detalle </td>
-                  <td></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P01.4</td>
-                  <td>Detalle</td>
-                  <td></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P01.5</td>
-                  <td>Detalle</td>
-                  <td></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P01.6</td>
-                  <td>Detalle</td>
-                  <td></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-              </table>
-              <br>
-              <table class=" " style="color: darkred ">
-
-                <tr>
-                  <th>Proceso</th>
-                  <th>Detalle</th>
-                  <th>Sí</th>
-                  <th>No</th>
-                  <th>N/A</th>
-
-                </tr>
-                <tr>
-                  <td>P02.1</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P02.2</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P02.3</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P02.4</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P02.5</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P02.6</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-              </table>
-
-              <br>
-              <table class=" " style="color: darkred ">
-
-                <tr>
-                  <th>Proceso</th>
-                  <th>Detalle</th>
-                  <th>Sí</th>
-                  <th>No</th>
-                  <th>N/A</th>
-
-                </tr>
-                <tr>
-                  <td>P03.1</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P03.2</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P03.3</td>
-                  <td>Detalle </td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-
-                </tr>
-                <tr>
-                  <td>P03.4</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P03.5</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
-                <tr>
-                  <td>P03.6</td>
-                  <td>Detalle</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                </tr>
+              
+              <?php
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                      echo <<<HTML
+                      <tr>
+                          <td>{$row["process_name"]}</td>
+                          <td>{$row["process_details"]}</td>
+                          <td>{$row["question"]}</td>
+                          <td><input type="checkbox"></td>
+                          <td><input type="checkbox"></td>
+                          <td><input type="checkbox"></td>
+                      </tr>
+                      HTML;
+                      }
+                  }
+                  // Cerrar la conexión
+                  $conn->close();
+                  ?>
               </table>
             </div>
             <div class="d-flex justify-content-md-center">
-              <button class="btn btn-outline-success" type="submit">Enviar</button>
+              <button class="btn btn-outline-success" id="calculateColorBtn" type="submit">Enviar</button>
               <button class="btn btn-outline-danger mx-2" id="limpiarBtn" type="submit">Limpiar</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class=right-container>
+        <img id="defaultImage" src="FeVerde.jpg" alt="Imagen por defecto"  width="720" height="580">
       </div>
     </div>
   </body>
@@ -305,8 +148,7 @@
 
   </footer>
 
-</html>
-<script src="script.js"></script>
 </body>
-
+<script src="S1AdminBases.js">
+</script>
 </html>
