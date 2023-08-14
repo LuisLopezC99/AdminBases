@@ -46,6 +46,23 @@
 <header>
   
 </header>
+<script>
+        function Reassign() {
+            var a = document.getElementsByName("reassignChecks");
+            var b = document.getElementById("cb");
+            if (b.checked==true) {
+                for (var i = 0; i < a.length; i++) {
+                    a[i].disabled = true;
+                }
+            }
+            if (b.checked == false) {
+                for (var i = 0; i < a.length; i++) {
+                    a[i].disabled = false;
+                }
+            }
+        }
+    </script>
+
   <body>
     <!-- A vertical navbar -->
     <div class="navbar-container">
@@ -113,16 +130,22 @@
                 </tr>
               
               <?php
+              $contador = 0;
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
+                      $contador++; // Incrementamos el contador en cada iteración
+                      $id = "radius" . $contador; 
                       echo <<<HTML
                       <tr>
                           <td>{$row["process_name"]}</td>
                           <td>{$row["process_details"]}</td>
                           <td>{$row["question"]}</td>
-                          <td><input type="checkbox"></td>
-                          <td><input type="checkbox"></td>
-                          <td><input type="checkbox"></td>
+                          
+                          <td><input value = "si" name = "{$id}" type="Radio"></td>
+                          <td><input value = "no" name = "{$id}" type="Radio"></td>
+                          <td><input value = "na" name = "{$id}" type="Radio"></td>
+                          
+                          
                       </tr>
                       HTML;
                       }
@@ -133,7 +156,7 @@
               </table>
             </div>
             <div class="d-flex justify-content-md-center">
-              <button class="btn btn-outline-success" id="calculateColorBtn" type="submit">Enviar</button>
+              <button id="calculateColorBtn" class="btn btn-outline-success" type="button">Enviar</button>
               <button class="btn btn-outline-danger mx-2" id="limpiarBtn" type="submit">Limpiar</button>
             </div>
           </div>
