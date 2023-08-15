@@ -48,9 +48,9 @@ function setImageByColor(color) {
     if (color === 'green') {
         imageName = "FeVerde.jpg";
     } else if (color === 'yellow') {
-        imageName = "FeAmarilo.jpeg";
+        imageName = "FeAmarillo.jpg";
     } else {
-        imageName = "FeRojo.jpeg";
+        imageName = "FeRojo.jpg";
     }
 
     let imgElement = document.getElementById("defaultImage");
