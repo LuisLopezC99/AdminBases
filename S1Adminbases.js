@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let percentage = totalRadioButtons > 0 ? (checkedRadioButtons / totalRadioButtons) * 100 : 0;
         let color = 'red';
 
-        if (percentage >= 80) {
+        if (percentage >= 60) {
             color = 'green';
         } else if (percentage >= 30) {
             color = 'yellow';
