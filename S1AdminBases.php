@@ -172,9 +172,27 @@ function Reassign() {
         <div class="col-md-4">
             <div class=right-container>
                 <img id="defaultImage" src="FeRojo.jpg" alt="Imagen por defecto">
+
+            </div >
+            <div class=right-container>
+            <!--<canvas id="myCanvas" style="background: white; text-align: center;"></canvas>
+            <legend for="myCanvas"></legend>
+            -->
+            <div class=right-container>
+                <img id="defaultImage1" src="FeRojo.jpg" alt="Imagen por defecto">
+
+            </div ><div class=right-container>
+                <img id="defaultImage2" src="FeRojo.jpg" alt="Imagen por defecto">
+
+            </div ><div class=right-container>
+                <img id="defaultImage3" src="FeRojo.jpg" alt="Imagen por defecto">
+
+            </div >
             </div>
         </div>
+       
     </div>
+
 </body>
 <footer>
 
