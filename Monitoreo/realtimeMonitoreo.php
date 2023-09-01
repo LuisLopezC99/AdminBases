@@ -98,10 +98,9 @@ window.Promise ||
 </script>
 
 <body>
-<h1 style="color: darkred ">Monitoreo y Análisis de las Principales Estructuras de Memoria del Sistema Administrador de Bases de
-            Datos </h1>
+
     <div class="container">
-    
+    <a href="Bitacora.php" class="btn btn-primary" role="button">BITACORA</a>
         <div class="scrollable-table-container">
             <table class="" style="color: darkred ">
                 <tr>
@@ -201,9 +200,7 @@ window.Promise ||
         }])
     }, 1000)
     </script>
-    <div style="text-align: center;">
-    <a href="Bitacora.php" class="btn btn-outline-info" role="button">BITACORA</a>
-    </div>
+    
 </body>
 
 </html>
